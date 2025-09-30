@@ -106,5 +106,5 @@ spec:
           configMap:
             name: mysql-initdb-config
         - name: mysql-persistent-storage
-            emptyDir:
-              sizeLimit: 5Gi
+          emptyDir:
+            sizeLimit: 5Gi
