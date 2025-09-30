@@ -107,4 +107,4 @@ spec:
             name: mysql-initdb-config
         - name: mysql-persistent-storage
             emptyDir:
-            sizeLimit: 5Gi
+              sizeLimit: 5Gi
