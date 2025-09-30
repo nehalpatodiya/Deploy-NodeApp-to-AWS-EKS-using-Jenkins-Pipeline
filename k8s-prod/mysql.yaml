@@ -105,12 +105,6 @@ spec:
         - name: initdb
           configMap:
             name: mysql-initdb-config
-  volumeClaimTemplates:
-    - metadata:
-        name: mysql-persistent-storage
-      spec:
-        accessModes: [ "ReadWriteOnce" ]
-        storageClassName: ebs-sc
-        resources:
-          requests:
-            storage: 5Gi
+        - name: mysql-persistent-storage
+            emptyDir:
+            sizeLimit: 5Gi
